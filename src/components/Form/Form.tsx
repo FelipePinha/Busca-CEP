@@ -23,7 +23,7 @@ export const Form = ({ setLocation }: FormProps) => {
         }
 
         setError(false);
-        const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         const data = await response.json();
         setLocation(data);
     };
