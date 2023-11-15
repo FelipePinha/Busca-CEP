@@ -9,4 +9,5 @@ export interface LocationType {
     gia: string;
     ddd: string;
     siafi: string;
+    erro?: true;
 }
