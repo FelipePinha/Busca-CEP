@@ -1,4 +1,5 @@
 import { Form } from './components/Form/Form';
+import { Output } from './components/Output/Output';
 import './styles/app.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
                     <p>Encontre endereços em segundos!</p>
                 </header>
                 <Form />
+                <Output />
             </div>
         </div>
     );
