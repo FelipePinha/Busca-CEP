@@ -16,4 +16,18 @@
     & p:nth-child(2) {
         margin: 1.5rem 0;
     }
+
+    .wait-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 10rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
 }

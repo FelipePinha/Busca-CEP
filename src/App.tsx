@@ -9,8 +9,6 @@ import './styles/app.scss';
 function App() {
     const [location, setLocation] = useState<LocationType>();
 
-    console.log(location);
-
     return (
         <div className="app-container">
             <div className="wrapper">
@@ -19,7 +17,7 @@ function App() {
                     <p>Encontre endereços em segundos!</p>
                 </header>
                 <Form setLocation={setLocation} />
-                <Output />
+                <Output location={location} />
                 <img src={Truck} alt="caminhão" />
             </div>
         </div>
