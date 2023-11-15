@@ -4,7 +4,7 @@ import SadFace from '../../images/sad-face.png';
 import './_Output.scss';
 
 interface OutputProps {
-    location: LocationType;
+    location: LocationType | undefined;
 }
 
 export const Output = ({ location }: OutputProps) => {
