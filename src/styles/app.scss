@@ -55,20 +55,20 @@ body {
 
     .title-container {
         grid-area: title;
-    }
 
-    h1,
-    p {
-        color: $white;
-        font-weight: 700;
-    }
+        h1,
+        p {
+            color: $white;
+            font-weight: 700;
+        }
 
-    h1 {
-        font-size: 4rem;
-    }
+        h1 {
+            font-size: 4rem;
+        }
 
-    p {
-        font-size: 1.8rem;
+        p {
+            font-size: 1.8rem;
+        }
     }
 
     img {
