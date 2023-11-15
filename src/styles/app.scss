@@ -21,11 +21,30 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 2rem;
+
+    @media (min-width: 768px) {
+        align-items: center;
+    }
 }
 
-.container {
+.wrapper {
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            'title  image'
+            'form   image'
+            'output image';
+
+        column-gap: 10rem;
+
+        & > img {
+            min-width: 30rem;
+            height: 30rem;
+        }
+    }
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -50,5 +69,11 @@ body {
 
     p {
         font-size: 1.8rem;
+    }
+
+    img {
+        grid-area: image;
+        width: 12rem;
+        margin: 2rem auto;
     }
 }
