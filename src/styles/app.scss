@@ -24,16 +24,16 @@ body {
     align-items: flex-start;
     padding: 2rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         align-items: center;
     }
 }
 
 .wrapper {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            'title  image'
+            'title  .'
             'form   image'
             'output image';
 
