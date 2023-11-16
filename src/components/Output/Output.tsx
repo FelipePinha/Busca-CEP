@@ -8,8 +8,6 @@ interface OutputProps {
 }
 
 export const Output = ({ location }: OutputProps) => {
-    console.log(location);
-
     return (
         <section className="output">
             {!location && (
